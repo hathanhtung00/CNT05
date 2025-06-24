@@ -32,3 +32,14 @@
         border: none;
         margin-top: 20px
     }
+    a.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 16px;
+    background: #eee;
+    color: #333;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    transition: background 0.2s;
+}

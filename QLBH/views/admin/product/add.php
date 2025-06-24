@@ -29,7 +29,7 @@
         border-radius: 4px;
     }
 
-    button {
+    button[type="submit"] {
         background-color: rgb(255, 0, 0);
         color: white;
         border-radius: 4px;
@@ -37,6 +37,14 @@
         border: none;
         margin-top: 20px
     }
+    a.back-link {
+    background-color: rgb(255, 0, 0);
+   text-decoration: none;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+    margin-top: 20px;
+}
 </style>
 <link rel="stylesheet" href="../public/css/add.css">
 <form method="post" action="admin.php?controller=product&action=store" enctype="multipart/form-data">
@@ -45,5 +53,5 @@
     Giá: <input type="number" name="price" required><br>
     Ghi chú: <textarea name="description"></textarea><br>
     <button type="submit">Lưu</button>
-    <a href="admin.php?controller=product&action=index"><button>Quay lại</button></a>
+<a class="back-link" href="admin.php?controller=product&action=index">Quay lại</a>
 </form>

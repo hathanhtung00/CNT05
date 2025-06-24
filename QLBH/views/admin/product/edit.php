@@ -3,6 +3,7 @@
     <input type="hidden" name="id" value="<?= $product['id'] ?>">
     Tên: <input type="text" name="name" value="<?= htmlspecialchars($product['name']) ?>"><br>
     Giá: <input type="number" name="price" value="<?= htmlspecialchars($product['price']) ?>"><br>
+    Mô tả: <textarea name="description"><?= htmlspecialchars($product['description']) ?></textarea><br>
     <button type="submit">Cập nhật</button>
     <a href="index.php?controller=product&action=index"><button type="button">Quay lại</button></a>
 </form>
